@@ -8280,57 +8280,6 @@ a[href^="http://maps.google.com/maps"] {
     background: rgba(0, 0, 0, 0.7);
 }
 
-sup.dollar {
-    vertical-align: top;
-    top: 12px;
-}
-
-.content p {
-    font-size: 14px;
-    font-family: Arial;
-}
-
-.demo-hero-5 {
-    height: 500px;
-}
-
-.demo-hero-45 {
-    height: 450px;
-}
-
-.demo-handbook {
-    bottom: -132px;
-    left: 50%;
-    margin-left: -323px;
-    position: absolute;
-}
-
-.demo-signature {
-    position: relative;
-    overflow: auto;
-    width: 100%;
-    height: 250px;
-}
-
-.demo-signature svg {
-    position: absolute;
-    left: 30px;
-    bottom: 47px;
-    right: 0;
-}
-
-.demo-brush {
-    width: 100%;
-    height: 170px;
-    background-repeat: repeat;
-    background-size: initial;
-    margin-bottom: 55px;
-}
-
-.demo-olive {
-    top: 40px;
-}
-
 .buy-now {
     bottom: 20px;
     left: 20px;
@@ -8349,21 +8298,6 @@ sup.dollar {
     border-bottom-right-radius: 0;
     position: absolute;
     z-index: 10;
-}
-
-.demo-screenshot {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    background: #FFF;
-    float: left;
-    position: relative;
-    margin-bottom: 20px;
-    width: 330px;
-    border: 1px solid #e6e6e6;
-}
-
-.demo-screenshot img {
-    width: 100%;
 }
 
 .hover-push {
@@ -8484,76 +8418,6 @@ sup.dollar {
 
 .hover-zoom-simple [data-pages-bg-image]:hover .bg-overlay {
     opacity: .6!important;
-}
-
-.pricing-table td[class*="bg-"],
-.pricing-table th[class*="bg-"] {
-    border-top-color: transparent;
-    border-bottom-color: rgba(0, 0, 0, 0.02);
-    border-right-color: transparent;
-    border-left-color: transparent;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-}
-
-.pricing-table>thead>tr>th {
-    border-bottom-width: 1px;
-}
-
-.pricing-table tr td:nth-child(2),
-.pricing-table tr th:nth-child(2) {
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-@media only screen and (max-width: 768px) {
-    .pricing-table,
-    .pricing-table thead,
-    .pricing-table tbody,
-    .pricing-table th,
-    .pricing-table td,
-    .pricing-table tr {
-        display: block;
-    }
-    .pricing-table {}
-    .pricing-table thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-    .pricing-table tr {
-        margin-top: 25px;
-    }
-    .pricing-table tr td:nth-child(2),
-    .pricing-table tr th:nth-child(2) {
-        border-left: none;
-    }
-    .pricing-table td {
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-        white-space: normal;
-        text-align: left;
-    }
-    .pricing-table td:before {
-        position: absolute;
-        top: 50%;
-        margin-top: -11px;
-        left: 17px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-        text-align: left;
-        font-weight: bold;
-    }
-    .pricing-table td:before {
-        content: attr(data-title);
-    }
-}
-
-.pricing-layout-overflow-top {
-    position: relative;
-    margin-top: -232px;
 }
 
 .visible-xlg {
