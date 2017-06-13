@@ -9534,8 +9534,27 @@ a[href^="http://maps.google.com/maps"] {
     }
 }
 
-
+img {
+    max-width: 100%
+}
 
 .logo-size--lg {
     width: 100px;
+}
+
+.home-section-image {
+    position: relative
+}
+
+.home-section-image__left {
+   margin-top: 80px;
+}
+
+@media (min-width: 480px) { 
+    .home-section-image__left {
+        position: absolute;
+        top: -50px;
+        left: -20px;
+        margin-top: 0;
+    }
 }
