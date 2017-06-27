@@ -16,6 +16,7 @@
             name: data.name,
             email: data.email,
             phone: data.phone,
+            no_units: data.no_units,
             message: data.message
         }).then(function() {
             $('.js-place-order')[0].reset();
@@ -33,7 +34,8 @@
         var phone = $form.find('[name=phone]').val();
         var email = $form.find('[name=email]').val();
         var message = $form.find('[name=message]').val();
+        var no_units = $form.find('[name=no_units]').val();
        
-        writeUserData({name: name, email: email, phone: phone, message: message});
+        writeUserData({name: name, email: email, phone: phone, no_units: no_units, message: message});
     });
 })();
