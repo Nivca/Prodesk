@@ -7,6 +7,7 @@
         storageBucket: "healthydesk-75f21.appspot.com",
         messagingSenderId: "770488580054"
     };
+    if (window && !window.firebase) return;
     firebase.initializeApp(config);
 
     var database = firebase.database();
