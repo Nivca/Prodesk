@@ -333,15 +333,15 @@ body.pace-white .pace .pace-progress {
     display: inline-block;
 }
 
-.header.bg-header {
+.header {
     height: 110px;
 }
 
-.header.bg-header .header-inner {
+.header .header-inner {
     line-height: 110px;
 }
 
-.header.bg-header .menu-toggler {
+.header .menu-toggler {
     margin-top: 47.5px;
 }
 
@@ -407,7 +407,6 @@ body.pace-white .pace .pace-progress {
 }
 
 .header .header-inner {
-    line-height: 60px;
     width: 100%;
     -webkit-transition: line-height 0.4s ease;
     transition: line-height 0.4s ease;
@@ -1863,7 +1862,7 @@ h6.block {
 
 a {
     text-shadow: none!important;
-    color: #3a8fc8;
+    color: #21d4fd;
     transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s!important;
 }
 
@@ -1905,6 +1904,10 @@ p {
     margin: 0px 0px 10px 0px;
     font-style: normal;
     white-space: normal;
+}
+
+.blog-article p {
+    font-size: 18px;
 }
 
 small,
@@ -2294,7 +2297,7 @@ hr.dotted {
 }
 
 .text-primary {
-    color: #6d5cae!important;
+    color: #21d4fd!important;
 }
 
 .text-menu {
@@ -9201,13 +9204,13 @@ a[href^="http://maps.google.com/maps"] {
     .logo {
         display: inline-block;
     }
-    .header.bg-header {
+    .header {
         height: 70px;
     }
-    .header.bg-header .header-inner {
+    .header .header-inner {
         line-height: 70px;
     }
-    .header.bg-header .menu-toggler {
+    .header .menu-toggler {
         margin-top: 27.5px;
     }
     .header.md-header {
@@ -9589,4 +9592,10 @@ img {
 .divider-sm {
     background-image: linear-gradient(-32deg, #b721ff 0, #21d4fd 100%);
     height: 1px;
+}
+
+.color-text-gradient {
+    -webkit-background-clip: text;
+    background-image: linear-gradient(-32deg, #b721ff 0, #21d4fd 100%);
+    -webkit-text-fill-color: transparent;
 }
