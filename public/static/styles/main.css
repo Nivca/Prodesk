@@ -1059,13 +1059,6 @@ body.pace-white .pace .pace-progress {
     background-color: #6d5cae;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 [data-pages-bg-image] {
     background-size: cover;
     position: relative;
@@ -9546,15 +9539,46 @@ img {
     position: relative
 }
 
-.home-section-image__left {
-   margin-top: 80px;
+.home-section-image__right {
+   /*margin-top: 80px;*/
 }
 
-@media (min-width: 480px) { 
-    .home-section-image__left {
-        position: absolute;
-        top: -50px;
-        left: -20px;
-        margin-top: 0;
+@media (min-width: 640px) { 
+    .home-section-image__right {
+        position: relative;
+        z-index: 100;
     }
+}
+
+.header-logo__title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header-logo__subtitle {
+
+}
+
+.section-with-gradient {
+    position: relative;
+    padding-top: 130px;
+    background-image: linear-gradient(-32deg, #b721ff 0, #21d4fd 100%);
+    overflow: hidden;
+}
+
+.section-with-gradient:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: calc(100% - 40px);
+    background-color: white;
+    min-height: 250px;
+    width: 2000px;
+    transform: rotate(-6.5deg); 
+    transform-origin: 0 0 0; 
+}
+
+.footer {
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
