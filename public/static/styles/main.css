@@ -9599,3 +9599,30 @@ img {
     background-image: linear-gradient(-32deg, #b721ff 0, #21d4fd 100%);
     -webkit-text-fill-color: transparent;
 }
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-container {
+    height: 250px;
+}
+
+.swiper-button-black{
+    opacity: .3;
+    transition: opacity .2s;
+}
+
+.swiper-button-black:hover,
+.swiper-button-black:focus {
+    opacity: 1;
+}
+
+.swiper-button-prev.swiper-button-disabled, 
+.swiper-button-next.swiper-button-disabled {
+    opacity: 0
+}

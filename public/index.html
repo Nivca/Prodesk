@@ -138,7 +138,7 @@
             and stands with you, ready to get working...</p>
 
           <h6 class="block-title m-t-40">Affordable</h6>
-          <p class="m-t-15">Burn calories, not your pockets. At just <strong><i class="fa fa-inr"></i>6990</strong>*<strong>/-</strong>. <br/>
+          <p class="m-t-15">Burn calories, not your pockets. At just <strong><i class="fa fa-inr"></i>6490</strong>*<strong>/-</strong>. <br/>
             ProDesk makes sure you get a better posture at a pocket friendly pricetag. <small class="small-text"> * Excluding tax.</small>
           </p>
 
@@ -150,7 +150,37 @@
       </div>
     </div>
   </section>
-
+  <section class="p-b-50 p-t-50">
+    <div class="container ">
+       <div class="swiper-container js-swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                <img data-src="./images/products/1.jpg" class="swiper-lazy">
+                <!-- Preloader image -->
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="./images/products/2.jpg" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="./images/products/3.jpg" class="swiper-lazy">
+            </div>
+            <div class="swiper-slide">
+                <img data-src="./images/products/4.jpg" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="./images/products/5.jpg" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div> 
+        </div>
+        <div class="js-swiper-button-next swiper-button-next swiper-button-black"></div>
+        <div class="js-swiper-button-prev swiper-button-prev swiper-button-black"></div>
+      </div>
+    </div>
+  </section>
   <section class="p-b-50 p-t-50 bg-master-dark">
     <div class="container">
       <h2 class="text-white p-b-10">Help your employees to be <strong>healthy</strong> and <strong>productive</strong></h1>
@@ -264,6 +294,22 @@
     ga('create', 'UA-60526867-2', 'auto');
     ga('send', 'pageview');
   </script>
+    <script>
+    var swiper = new Swiper('.js-swiper-container', {
+        nextButton: '.js-swiper-button-next',
+        prevButton: '.js-swiper-button-prev',
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        preloadImages: false,
+        lazyLoading: true,
+        breakpoints: {
+            640: {
+                slidesPerView: 1
+            }
+        }
+    });
+    </script>
 </body>
 
 </html>
