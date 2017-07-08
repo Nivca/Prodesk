@@ -1,0 +1,45 @@
+title: Your awesome title
+email: hello@prodesk.life
+description: A standing desk that works for you! Height adjustable standing desk
+keywords: Height ajustable, standing desk, healthly, india
+
+
+footer-links:
+  dribbble:
+  email: hello@prodesk.life
+  facebook: prodesklife
+  flickr:
+  linkedin:
+  rss: # just type anything here for a working RSS icon
+  twitter: Prodesk_life
+  googleplus: # anything in your profile username that comes after plus.google.com/
+
+
+google_analytics: UA-60526867-2
+
+url: prodesk.life
+baseurl: ""
+
+permalink: /:title/
+version: v3.5.0
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+sass:
+  sass_dir: _sass
+  style: :expanded # You might prefer to minify using :compressed
+
+plugins:
+  # - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
