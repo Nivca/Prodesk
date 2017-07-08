@@ -37,6 +37,7 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 exclude:
+  - vendor
   - Gemfile
   - Gemfile.lock
   - LICENSE
