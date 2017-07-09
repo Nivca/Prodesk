@@ -1,18 +1,19 @@
 language: ruby
 rvm:
   - 2.3.3
-# node_js: 
-#   - "7.3"
 
 env: 
   - TRAVIS_NODE_VERSION="7"
-  
+
+cache: bundler
+
 before_install:
   - nvm install node
   - node -v
   - npm install npm -g
 
 install:
+  - bundle install
   - npm install -g firebase-tools
 
 before_script:
