@@ -4,7 +4,11 @@ rvm:
 # node_js: 
 #   - "7.3"
 
+env: 
+  - TRAVIS_NODE_VERSION="7"
+  
 before_install:
+  - nvm install node
   - node -v
   - npm install npm -g
 
