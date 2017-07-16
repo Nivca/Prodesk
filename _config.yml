@@ -47,3 +47,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+assets:
+  autoprefixer:
+    browsers: ["last 2 versions","> 5%","IE 9"]

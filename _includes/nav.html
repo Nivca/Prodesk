@@ -42,19 +42,19 @@
 
         <div class="header-inner">
           <ul class="menu">
-            <li>
-              <a href="{{ site.baseurl }}/" 
-                data-text="Home">
-                    Home
+            {% for link in site.data.navigation.masthead %}
+              {% assign class = nil %}
+              {% if page.url contains link.url %}
+                {% assign class = 'active' %}
+              {% endif %}
+              <li>
+                <a href="{{ site.url }}{{ link.url }}" 
+                  data-text="{{link.title}}"
+                  class="{{ class }}">{{ link.title }}
                 </a>
-            </li>
-
-            <li>
-              <a href="{{ site.baseurl }}/why"
-                {% if page.active == 'why' %}class='active'{% endif %}>
-                Why Stand & Work 
-                </a>
-            </li>
+              </li>
+            {% endfor %}
+            
             <li>
               <a class="btn btn-sm fs-12 hidden-sm hidden-xs {% if page.active == 'home' %}btn-bordered  btn-white{% endif %}" href="#contact">Buy now</a>
               <a class="btn btn-bordered fs-12 btn-black  font-montserrat fs-12 all-caps pull-bottom visible-sm visible-xs buy-now sm-static sm-m-l-20 sm-m-r-20 sm-m-t-20"

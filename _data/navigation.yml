@@ -1,0 +1,7 @@
+# masthead navigation links
+masthead:
+  - title: "Home"
+    url: /
+  - title: "Why Stand & Work"
+    url: /why
+
