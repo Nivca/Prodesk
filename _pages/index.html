@@ -66,27 +66,12 @@ active: home
     <div class="container ">
        <div class="swiper-container js-swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <!-- Required swiper-lazy class and image source specified in data-src attribute -->
-                <img data-src="./images/products/1.jpg" class="swiper-lazy">
-                <!-- Preloader image -->
+           {% for image in prodesk.images %}
+             <div class="swiper-slide">
+                <img data-src="./images/products/{{image}}" class="swiper-lazy">
                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </div>
-            <div class="swiper-slide">
-                <img data-src="./images/products/2.jpg" class="swiper-lazy">
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </div>
-            <div class="swiper-slide">
-                <img data-src="./images/products/3.jpg" class="swiper-lazy">
-            </div>
-            <div class="swiper-slide">
-                <img data-src="./images/products/4.jpg" class="swiper-lazy">
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </div>
-            <div class="swiper-slide">
-                <img data-src="./images/products/5.jpg" class="swiper-lazy">
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </div> 
+            {% endfor %}
         </div>
         <div class="js-swiper-button-next swiper-button-next swiper-button-black"></div>
         <div class="js-swiper-button-prev swiper-button-prev swiper-button-black"></div>
