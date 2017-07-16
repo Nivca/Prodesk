@@ -30,7 +30,8 @@ kramdown:
 
 sass:
   sass_dir: _sass
-  style: :expanded # You might prefer to minify using :compressed
+  sourcemap: true
+  style: :compressed
 
 plugins:
   # - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
