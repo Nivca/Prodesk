@@ -1,0 +1,16 @@
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    <FilesMatch \.(css|js|jpg)$>
+        ExpiresDefault "access plus 1 year"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{REQUEST_METHOD} !=POST
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+Header always set Strict-Transport-Security "max-age=86400"
