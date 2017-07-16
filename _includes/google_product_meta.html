@@ -1,25 +1,56 @@
+
+{% assign prodesk = site.data.products.prodesk %}
+{% assign social = site.social %}
+
 <script type="application/ld+json">
 {
   "@context": "http://schema.org/",
   "@type": "Product",
-  "name": "Prodesk.life",
-  "image": "https://prodesk.life/images/products/table-front-left.png",
+  "name": "{{site.name}}",
+  "image": "{{site.url}}/images/products/table-front-left.png",
   "description": "{{ site.description }}",
-  "height": "56cm",
-  "width": "87cm",
+  "height": {{prodesk.height}},
+  "width": {{prodesk.width}},
   "brand": {
     "@type": "Thing",
-    "name": "Prodesk.life"
+    "name": "{{site.name}}"
   },
   "offers": {
     "@type": "Offer",
     "priceCurrency": "INR",
-    "price": "6499",
+    "price": {{prodesk.price}},
     "availability": "http://schema.org/InStock",
     "seller": {
       "@type": "Organization",
-      "name": "Prodesk.life"
+      "name": "{{site.name}}"
     }
   }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "{{site.url}}",
+  "logo": "{{site.url}}/images/logo.svg",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "{{social.phone}}",
+    "contactType": "sales"
+  }]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "{{site.name}}",
+  "url": "{{site.url}}",
+  "sameAs": [
+    {% if social.facebook %}"http://www.facebook.com/{{social.facebook}}",{% endif %}
+    {% if social.twitter %}"http://www.twitter.com/{{social.twitter}}"{% endif %}
+  ]
 }
 </script>

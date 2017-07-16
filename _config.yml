@@ -1,11 +1,11 @@
 title: Prodesk
-name: Prodesk
+name: Prodesk Life
 email: hello@prodesk.life
 description: A standing desk that works for you! Height adjustable standing desk
 keywords: Height ajustable, standing desk, healthly, india
 
 
-footer-links:
+social:
   dribbble:
   email: hello@prodesk.life
   facebook: prodesklife
@@ -13,6 +13,7 @@ footer-links:
   linkedin:
   rss: # just type anything here for a working RSS icon
   twitter: Prodesk_life
+  phone: +91-9020660884
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
