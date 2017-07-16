@@ -1,0 +1,91 @@
+.label {
+    padding: 3px 9px;
+    font-size: 11px;
+    text-shadow: none;
+    background-color: #e6e6e6;
+    font-weight: 600;
+    color: #626262;
+}
+
+.label-success {
+    background-color: #10cfbd;
+    color: #fff;
+}
+
+.label-warning {
+    background-color: #f8d053;
+    color: #fff;
+}
+
+.label-important,
+.label-danger {
+    background-color: #f55753;
+    color: #fff;
+}
+
+.label-info {
+    background-color: #48b0f7;
+    color: #fff;
+}
+
+.label-inverse {
+    background-color: #3a8fc8;
+    color: #fff;
+}
+
+.label-white {
+    background-color: #fff;
+    color: #626262;
+}
+
+.badge {
+    text-shadow: none;
+    font-family: wf_segoe-ui_light, wf_segoe-ui_normal, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    background-color: #e6e6e6;
+    font-size: 11px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 4px;
+    color: #626262;
+}
+
+.badge-success {
+    background-color: #10cfbd;
+    color: #ffffff;
+}
+
+.badge-warning {
+    background-color: #f8d053;
+    color: #ffffff;
+}
+
+.badge-important {
+    background-color: #f55753;
+    color: #ffffff;
+}
+
+.badge-danger {
+    background-color: #f55753;
+    color: #ffffff;
+}
+
+.badge-info {
+    background-color: #3b4752;
+    color: #ffffff;
+}
+
+.badge-inverse {
+    background-color: #2b6a94;
+    color: #ffffff;
+}
+
+.badge-white {
+    background-color: #ffffff;
+    color: #626262;
+}
+
+.badge-disable {
+    background-color: #2c2c2c;
+    color: #626262;
+}

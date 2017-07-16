@@ -1,0 +1,13 @@
+img {
+    max-width: 100%
+}
+
+.lazy {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.lazy.loaded {
+    opacity: 1;
+}
