@@ -31,3 +31,7 @@
 {% if page.keywords %}
     <meta name="keywords" content="{{ page.keywords }}" property="keywords">
 {% endif %}
+
+{% if site.fb_app_id %}
+    <meta name="fb:app_id" content="{{ site.fb_app_id }}">
+{% endif %}
