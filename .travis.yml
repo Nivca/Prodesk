@@ -16,6 +16,7 @@ before_install:
 
 install:
   - bundle install
+  - yarn
   - npm install -g firebase-tools
 
 before_script:
@@ -34,3 +35,6 @@ deploy:
   provider: firebase
   token:
     secure: $FIREBASE_TOKEN
+
+after_deploy:
+ - ./script/after_deploy
