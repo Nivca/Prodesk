@@ -1,0 +1,27 @@
+[debug] [2017-07-22T16:47:51.957Z] ----------------------------------------------------------------------
+[debug] [2017-07-22T16:47:51.960Z] Command:      /Users/Anenth/.nvm/versions/node/v6.9.1/bin/node /Users/Anenth/.nvm/versions/node/v6.9.1/bin/firebase serve --only functions
+[debug] [2017-07-22T16:47:51.960Z] CLI Version:  3.9.1
+[debug] [2017-07-22T16:47:51.961Z] Platform:     darwin
+[debug] [2017-07-22T16:47:51.961Z] Node Version: v6.9.1
+[debug] [2017-07-22T16:47:51.961Z] Time:         Sat Jul 22 2017 22:17:51 GMT+0530 (IST)
+[debug] [2017-07-22T16:47:51.961Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-22T16:47:51.980Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-22T16:47:51.980Z] > authorizing via signed-in user
+[debug] [2017-07-22T16:47:51.983Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/healthydesk-75f21  
+ Sat Jul 22 2017 22:17:51 GMT+0530 (IST)
+[debug] [2017-07-22T16:47:53.581Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-22T16:47:53.583Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/healthydesk-75f21/tokens  
+ Sat Jul 22 2017 22:17:53 GMT+0530 (IST)
+[debug] [2017-07-22T16:47:54.773Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Anenth/Code/Prodesk'...
+[info] 
+[info] i  functions: Preparing to emulate HTTPS functions. Support for other event types coming soon.
+[debug] [2017-07-22T16:47:55.381Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/healthydesk-75f21  
+ Sat Jul 22 2017 22:17:55 GMT+0530 (IST)
+[debug] [2017-07-22T16:47:55.381Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/healthydesk-75f21/apiKeys  
+ Sat Jul 22 2017 22:17:55 GMT+0530 (IST)
+[debug] [2017-07-22T16:47:57.120Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-22T16:47:57.139Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: httpEmail: http://localhost:5002/healthydesk-75f21/us-central1/httpEmail

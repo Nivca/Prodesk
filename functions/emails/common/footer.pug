@@ -1,0 +1,26 @@
+include ./components.pug
+
+table
+    +space-row(6)
+    tr: td.divider
+    +space-row(6)
+    tr: td: table
+        tr
+            td.text-center
+                p
+                    img(src='https://prodesk.life/images/email/logo.png', width='100', height='100', alt='prodesk logo')
+                    strong PHOENIX 
+                    br
+                    strong IMPORTS & EXPORTS
+            +space-col(6)
+            td
+                table
+                    tr
+                        td(valign='top', width='52')    
+                            a(target='_blank', href='https://www.facebook.com/prodesklife')
+                                img(src='https://prodesk.life/images/email/facebook.png', width='52', height='53', alt='facebook icon')
+
+                        +space-col(4)
+                        td(valign='top', width='52')
+                            a(target='_blank', href='https://www.twitter.com/Prodesk_life')
+                                img(src='https://prodesk.life/images/email/twitter.png', width='52', height='53', alt='twitter icon')

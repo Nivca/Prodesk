@@ -48,6 +48,9 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - functions
+  - firebase.json
+  - emails
 
 assets:
   autoprefixer:

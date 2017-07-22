@@ -1,0 +1,42 @@
+extends ../common/base.pug
+include ../common/components.pug
+
+block content
+    tr
+        td.text-center
+            span.text-main Prodesk life
+            img(src='https://prodesk.life/images/email/line.png', width='251', height='43', alt='')        
+
+    tr: td: table
+        +space-row(6)
+        tr
+            td
+                h2 Thank you for showing interst in buying Prodesk
+        +space-row(4)
+        tr: td
+                p
+                    | Hi #{name}, 
+                    br
+                    | We have recived your query for buying standing desk, Our sales executive will get in back to you soon.
+                    
+                p 
+                    | We will reach you on 
+                    br
+                    | Phone: #{phone}
+                    br
+                    | Email: #{email}
+
+        +space-row(4)
+        tr: td: p
+            br
+            | Have questions? Get in touch with us via Facebook or Twitter, or email our support team.
+            br
+            br
+            | Cheers,
+            br
+        +space-row(4)
+        tr: td: p
+            strong Sachwin Lal, 
+            br
+            | co-founder
+        +space-row(10)

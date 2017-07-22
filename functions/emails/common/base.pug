@@ -1,0 +1,16 @@
+include ./components.pug
+
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title Prodesk Life - Standing desk
+  body
+    table.main-content
+        +space-row(18)
+        table
+            block content
+
+    include ./footer.pug
+    +space-row(4)
+                                      

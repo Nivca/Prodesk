@@ -35,3 +35,7 @@
 {% if site.fb_app_id %}
     <meta name="fb:app_id" content="{{ site.fb_app_id }}">
 {% endif %}
+
+{% if site.social.twitter %}
+    <meta name="twitter:site" content="@{{site.social.twitter}}" />
+{% endif %}
