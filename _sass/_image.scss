@@ -11,3 +11,15 @@ img {
 .lazy.loaded {
     opacity: 1;
 }
+
+.logo-client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    padding: 8px;
+    
+    img {
+        max-height: 100%;
+    }
+}

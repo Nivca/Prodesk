@@ -79,6 +79,19 @@ active: home
       </div>
     </div>
   </section>
+  <section class="p-b-50 p-t-50">
+    <div class="container">
+       <div class="row-flex">
+        <h2 class="p-b-10">Used by</h1>
+        
+        {% for testimonial in testimonials %}
+          <div class="logo-client">
+              <img src="./images/clients/{{testimonial.logo}}" class="lazy">
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
   <section class="p-b-50 p-t-50 bg-master-dark">
     <div class="container">
       <h2 class="text-white p-b-10">Help your employees to be <strong>healthy</strong> and <strong>productive</strong></h1>

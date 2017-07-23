@@ -1,0 +1,20 @@
+{
+  prodesk: [
+    {
+      client: 'Recruiterbox',
+      logo: 'rbox.png',
+      people: [{
+        name: "Nivedita",
+        review: "For the longest time, I had a backache that I couldn't get rid of. It would come and go and be excruciating while it lasted. A very dear friend suggested I try alternating between sitting and standing while doing work at my desk. It sounded like a good idea but ergonomically, you need support systems so your neck isn't bent when you stand and work. Prodesk came to my rescue. It has varying heights for the keyboard and laptop/ monitor racks and can be adjusted according to your convenience. The product is light, looks classy and has helped ease my back problem to a considerable extent. I've even purchased a few pieces for my colleagues at work and they all have only nice things to say. It's a brilliant product and I'd highly recommend anyone who likes standing and working to try it out" 
+      }]
+    },
+    {
+      client: 'HackerEarth',
+      logo: 'he.png'
+    },
+    {
+      client: 'Quintype',
+      logo: 'quint.png'
+    }
+  ]
+}
