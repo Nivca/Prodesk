@@ -1,7 +1,7 @@
 {
   prodesk: [
     {
-      client: 'Recruiterbox',
+      name: 'Recruiterbox',
       logo: 'rbox.png',
       people: [{
         name: "Nivedita",
@@ -9,11 +9,11 @@
       }]
     },
     {
-      client: 'HackerEarth',
+      name: 'HackerEarth',
       logo: 'he.png'
     },
     {
-      client: 'Quintype',
+      name: 'Quintype',
       logo: 'quint.png'
     }
   ]
