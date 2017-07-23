@@ -16,25 +16,25 @@
             name: data.name,
             email: data.email,
             phone: data.phone,
-            no_units: data.no_units,
+            no_units: data.no_units || 0,
             message: data.message
         }).then(function() {
             $('.js-place-order')[0].reset();
-            $('.js-success').removeClass('hide');
+            $('.js-success').slideDown();
         }).catch(function() {
-            $('.js-error').removeClass('hide');
+            $('.js-error').slideDown();
         });
     }
 
     $('.js-place-order').on('submit', function(e) {
         e.preventDefault();
-        $('.js-success, .js-error').addClass('hide');
+        $('.js-success, .js-error').slideUp();
         var $form = $(e.currentTarget);
         var name = $form.find('[name=name]').val();
         var phone = $form.find('[name=phone]').val();
         var email = $form.find('[name=email]').val();
         var message = $form.find('[name=message]').val();
-        var no_units = $form.find('[name=no_units]').val();
+        var no_units = $form.find('[name=no_units]') && $form.find('[name=no_units]').val();
        
         writeUserData({name: name, email: email, phone: phone, no_units: no_units, message: message});
     });
