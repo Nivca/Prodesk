@@ -14,6 +14,7 @@ social:
   rss: # just type anything here for a working RSS icon
   twitter: Prodesk_life
   phone: +91-9020660884
+  location: Bangalore, India
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 fb_app_id: 798530620306323
@@ -39,7 +40,7 @@ include: ["_pages"]
 
 plugins:
   # - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-feed
 
 exclude:
   - vendor

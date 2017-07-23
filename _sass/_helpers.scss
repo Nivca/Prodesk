@@ -3,7 +3,7 @@
 }
 
 .bg-master-light {
-    background-color: #e6e6e6;
+    background-color: #ebf0f4;
 }
 
 .bg-master-lighter {
@@ -27,23 +27,23 @@
 }
 
 .bg-primary {
-    background-color: #6d5cae;
+    background-color: $color-primary;
 }
 
 .bg-primary-dark {
-    background-color: #584b8d;
+    background-color: darken($color-primary, 10%);
 }
 
 .bg-primary-darker {
-    background-color: #413768;
+    background-color: darken($color-primary, 25%);
 }
 
 .bg-primary-light {
-    background-color: #8a7dbe;
+    background-color: lighten($color-primary, 25%);
 }
 
 .bg-primary-lighter {
-    background-color: #e2deef;
+    background-color: lighten($color-primary, 25%);
 }
 
 .bg-complete {
@@ -1740,4 +1740,8 @@ section.last:before {
 
 .z-index-10 {
     z-index: 10;
+}
+
+.row-flex {
+    display: flex;
 }

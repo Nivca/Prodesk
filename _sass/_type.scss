@@ -92,20 +92,21 @@ a {
     text-shadow: none!important;
     color: #21d4fd;
     transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s!important;
-}
 
-a:focus,
-a:hover,
-a:active {
-    color: #48b0f7;
-}
+    &:focus,
+    &:hover,
+    &:active {
+        color: #48b0f7;
+    }
 
-a,
-a:focus,
-a:hover,
-a:active {
-    outline: 0!important;
-    text-decoration: none;
+
+    &,
+    &:focus,
+    &:hover,
+    &:active {
+        outline: 0!important;
+        text-decoration: none;
+    }
 }
 
 br {
