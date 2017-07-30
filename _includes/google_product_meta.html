@@ -1,5 +1,6 @@
 
 {% assign prodesk = site.data.products.prodesk %}
+{% assign testimonials = site.data.testimonials.prodesk %}
 {% assign social = site.social %}
 
 <script type="application/ld+json">
@@ -7,10 +8,10 @@
   "@context": "http://schema.org/",
   "@type": "Product",
   "name": "{{site.name}}",
-  "image": "{{site.url}}/images/products/table-front-left.png",
+  "image": "{{site.url}}{{prodesk.main_image}}",
   "description": "{{ site.description }}",
-  "height": {{prodesk.height}},
-  "width": {{prodesk.width}},
+  "height": "{{prodesk.height}}",
+  "width": "{{prodesk.width}}",
   "brand": {
     "@type": "Thing",
     "name": "{{site.name}}"
@@ -54,3 +55,31 @@
   ]
 }
 </script>
+
+{% for testimonial in testimonials %}
+  {% unless testimonial.content.review == null %}
+    <script type="application/ld+json"> {
+    "@context": "http://schema.org/",
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": "Product",
+      "image": "{{site.url}}{{prodesk.main_image}}",
+      "name": "{{site.name}}"
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "{{testimonial.content.name}}"
+    },
+    "reviewBody": "{{testimonial.content.review}}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{testimonial.name}}"
+    }
+  }
+  </script>
+  {% endunless %}
+{% endfor %}
