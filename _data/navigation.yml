@@ -1,6 +1,7 @@
 masthead:
   - title: "Home"
     url: /
-  - title: "Why Stand & Work"
+  - title: "Why Stand & Work?"
     url: /why
-
+  - title: "About us"
+    url: /about
