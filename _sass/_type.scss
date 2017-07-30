@@ -48,7 +48,8 @@ h2 {
     line-height: 42px;
 }
 
-h3 {
+h3, 
+.h3 {
     font-size: 27px;
     line-height: 40px;
 }
@@ -137,10 +138,15 @@ p {
 
 .blog-article {
     min-height: 85vh;
-}
+    
+    h2 {
+        margin-top: 40px;
+    }
 
-.blog-article p {
-    font-size: 18px;
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
 }
 
 small,

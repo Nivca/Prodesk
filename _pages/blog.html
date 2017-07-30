@@ -1,0 +1,30 @@
+---
+layout: default
+title:  Blog - All about healthly living
+permalink: /blog/
+active: blog
+---
+
+<section class="p-b-50 p-t-100 bg-master-light">
+    <div class="container p-b-50 p-t-50">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                {% for post in site.posts %}
+                <article class="card m-b-25">
+                    <div class="card__content">
+                        <h1 class="h3 semi-bold no-margin">
+                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                        </h1>
+                        
+                        <div class="entry">
+                            {{ post.excerpt }}
+                        </div>
+                        
+                        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
