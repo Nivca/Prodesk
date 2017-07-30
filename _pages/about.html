@@ -5,19 +5,45 @@ permalink: /about/
 active: about
 ---
 
-<section class="p-b-50 p-t-50">
-    <div class="m-b-50 text-center">
-        <h1 class="m-t-50 color-text-gradient">
-            About Us
-        </h1>
-        <p>
-
-        </p>
+<section class="p-b-50 p-t-50 container blog-article">
+    <h1 class="text-center m-t-50 color-text-gradient">
+        About Us
+    </h1>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <article class="m-b-50">
+                <h2>Our story</h2>
+                <p>
+                    I have been searching for a standing desk for more than 3 years, I couldn't find one which was affortable, I had to use 
+                    unstable carbord boxes. I was tired of searching, So I asked my friend to help me to build one and we did it! I started 
+                    my new standing desk and I loved it. 
+                    <br/><br/>
+                    I figured more people will have faced the same problem as me so we started <strong>Prodesk life</strong> to help 
+                    people. 
+                </p>
+            </article>
+            <article class="m-b-50">
+                <h2>Team</h2> 
+                {% assign members = site.data.people.members %}
+                <div class="row">
+                    {% for member in members %}
+                    <div class="col-md-5">
+                        <div class="row-flex">
+                            <img class="image-semi-round m-r-20" 
+                            alt="{{ member.name }} photo"
+                            src="{{ member.email | to_gravatar }}?s=68" />
+                            <div class="m-t-10">
+                                <h4 class="no-margin">{{ member.name }}</h4>
+                                {{ member.co-title }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+            </article>
+        </div>
     </div>
+    
+    
 </section>
-
-<article>
-    <h1 class="m-t-50 color-text-gradient">
-        Team
-    </h1>    
-</article>
