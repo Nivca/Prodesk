@@ -3,5 +3,11 @@ masthead:
     url: /
   - title: "Why Stand & Work?"
     url: /why
+  
+footer:
+  - title: "Home"
+    url: /
+  - title: "Blog"
+    url: /why
   - title: "About us"
     url: /about

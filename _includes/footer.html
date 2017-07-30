@@ -1,24 +1,45 @@
-<footer class="p-b-30 p-t-40 footer sm-text-center">
+<footer class="p-b-30 p-t-30 footer sm-text-center">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <img src="{{ site.baseurl }}/images/logo.svg" class="logo-size--lg" alt="">
-                <h6 class="block-title m-t-15">Phoenix
-                    <div class="small-text text-master">Imports & Exports</div>
-                </h6>
-
+            <div class="col-sm-3">
+                <div class="row">
+                    <div class="col-xs-5 p-r-0">
+                        <img src="{{ site.baseurl }}/images/logo.svg" class="logo-size--lg" alt="">
+                    </div>
+                    <div class="col-xs-7 no-padding">
+                        <h6 class="block-title m-t-30">Phoenix
+                            <div class="small-text text-master">Imports & Exports</div>
+                        </h6>
+                    </div>
+                </div>
+                 <p class="fs-11 muted no-margin">© 2017 Phoenix Imports & Exports Inc</p> 
             </div>
-            <div class="col-sm-6 text-right sm-text-center p-t-40">
+            <div class="col-sm-5 col-sm-offset-1">
+                <ul class="no-style no-padding font-secondary m-t-30">
+                    {% for link in site.data.navigation.footer %}
+                     {% assign class = nil %}
+                    {% if page.url contains link.url %}
+                        {% assign class = 'active' %}
+                    {% endif %}
+                    <li>
+                        <a href="{{ link.url }}" 
+                        data-text="{{link.title}}"
+                        class="text-master {{class}}">{{ link.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </div>
+            <div class="col-sm-3 text-right sm-text-center p-t-20">
                 <img src="{{ site.baseurl }}/images/mii.svg" class="logo-size--lg" alt="Make in india">
                 <div class="m-t-10 ">
                     <ul class="no-style fs-11 no-padding font-arial">
                         <li class="inline no-padding">
-                            <a href="http://www.makeinindia.com/home/" target="_blank" class="hint-text text-master p-l-10 p-r-10 xs-no-padding xs-m-t-10">
+                            <a href="http://www.makeinindia.com/home/" target="_blank" 
+                            class="hint-text text-master p-l-10 p-r-10 xs-no-padding xs-m-t-10">
                             Make in India
-                          </a></li>
+                        </a></li>
                     </ul>
                 </div>
-                <p class="fs-11 muted">Copyright &copy; 2017</p>
             </div>
         </div>
     </div>

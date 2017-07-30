@@ -467,11 +467,13 @@ hr.dotted {
     letter-spacing: 0.03em;
 }
 
-.font-montserrat {
+.font-montserrat,
+.font-secondary {
     font-family: $font-family-secondary;
 }
 
-.font-open-sans {
+.font-open-sans,
+.font-primary {
     font-family: $font-family-default;
     font-weight: 300;
 }
@@ -480,16 +482,6 @@ hr.dotted {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-}
-
-.jumbotron p {
-    font-size: 14px;
-    font-weight: normal;
-    margin-bottom: inherit;
-}
-
-.jumbotron p.small {
-    font-size: 85%;
 }
 
 .color-text-gradient {
