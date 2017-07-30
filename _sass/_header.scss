@@ -455,7 +455,7 @@
 .header .menu>li>a {
     position: relative;
     text-transform: uppercase;
-    font-family: 'Montserrat';
+    font-family: $font-family-secondary;
     padding-right: 21px;
     display: block;
 }
@@ -678,7 +678,7 @@
 .header .menu>li>.classic ul>li a {
     color: #000000;
     text-transform: uppercase;
-    font-family: 'Montserrat';
+    font-family: $font-family-secondary;
     opacity: 0.5;
     font-size: 11px;
     line-height: 30px;
@@ -745,7 +745,7 @@
     color: #000000;
     opacity: 0.5;
     text-transform: uppercase;
-    font-family: 'Montserrat';
+    font-family: $font-family-secondary;
     line-height: 35px;
     font-size: 11px;
 }
@@ -796,7 +796,7 @@
 .header .menu>li>.mega .container ul.sub-menu>li a {
     color: #000000;
     text-transform: uppercase;
-    font-family: 'Montserrat';
+    font-family: $font-family-secondary;
     opacity: 0.5;
     font-size: 11px;
     line-height: 30px;
@@ -826,7 +826,7 @@
     color: #000000;
     font-size: 12px;
     text-transform: uppercase;
-    font-family: 'Montserrat';
+    font-family: $font-family-secondary;
     margin: 0;
     padding-bottom: 5px;
 }

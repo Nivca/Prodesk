@@ -1,4 +1,6 @@
+@import "bootstrap";
 @import "variables";
+@import "mixins";
 @import "scaffold";
 @import "type";
 @import "buttons";
@@ -8,6 +10,7 @@
 @import "helpers";
 @import "image";
 @import "card";
+@import "grid";
 
 .mobile-wrapper {
     height: 100%;
@@ -373,7 +376,7 @@
     transform: translateX(-200%);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: $screen-large) {
     .swiper-navigation.swiper-rounded.swiper-button-next {
         right: 25px;
     }
@@ -782,7 +785,7 @@
 }
 
 .error-number {
-    font-family: 'Montserrat';
+    font-family: $font-family-secondary;
     font-size: 90px;
     line-height: 90px;
 }
@@ -900,7 +903,7 @@
     }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: $screen-mobile) {
     .demo-custom-height {
         height: calc(100% - 135px);
     }
@@ -995,173 +998,7 @@ a[href^="http://maps.google.com/maps"] {
     right: 20px;
 }
 
-.feature-icon {
-    width: 25px;
-}
-
-.demo-btn-tour {
-    left: 50%;
-    bottom: 0;
-    margin-left: -74px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    position: absolute;
-    z-index: 10;
-}
-
-.hover-push {
-    background: #000;
-    position: relative;
-    cursor: pointer;
-}
-
-.hover-push:hover .hover-backdrop {
-    opacity: .6;
-}
-
-.hover-push:hover .hover-caption {
-    -webkit-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
-}
-
-.hover-push:hover .hover-caption a {
-    opacity: 1;
-}
-
-.hover-push:hover .hover-caption a:after {
-    -webkit-transform: translate3d(0, 40px, 0);
-    transform: translate3d(0, 40px, 0);
-    opacity: 1;
-}
-
-.hover-push .hover-backdrop {
-    opacity: .8;
-    background-size: cover!important;
-    background-position: center!important;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-}
-
-.hover-push .hover-caption {
-    position: relative;
-    z-index: 1;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-}
-
-.hover-push .hover-caption a {
-    display: inline-block;
-    margin: 0 auto;
-    position: relative;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-}
-
-.hover-push .hover-caption a:after {
-    position: absolute;
-    bottom: 32px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    content: '';
-    -webkit-transform: translate3d(0, 80px, 0);
-    transform: translate3d(0, 80px, 0);
-    opacity: 0;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-}
-
-.hover-zoom {
-    cursor: pointer;
-    position: relative;
-}
-
-.hover-zoom .inner {
-    z-index: 1;
-}
-
-.hover-zoom:hover [data-pages-bg-image] {
-    transform: scale(1.1);
-}
-
-.hover-zoom:hover [data-pages-bg-image] .bg-overlay {
-    opacity: .3!important;
-}
-
-.hover-zoom [data-pages-bg-image] {
-    transition: all .3s ease;
-}
-
-.hover-zoom [data-pages-bg-image] .bg-overlay {
-    transition: all .3s ease;
-}
-
-.hover-zoom-simple {
-    cursor: pointer;
-    position: relative;
-}
-
-.hover-zoom-simple [data-pages-bg-image] {
-    background-position: center center;
-    transition: background-size 0.3s ease;
-    -webkit-transition: background-size 0.3s ease;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.hover-zoom-simple [data-pages-bg-image]:hover {
-    background-size: 110%;
-}
-
-.hover-zoom-simple [data-pages-bg-image] .bg-overlay {
-    transition: all .3s ease;
-}
-
-.hover-zoom-simple [data-pages-bg-image]:hover .bg-overlay {
-    opacity: .6!important;
-}
-
-.visible-xlg {
-    display: none;
-}
-
-.hidden-xlg {
-    display: block;
-}
-
-@media (min-width: 1824px) {
-    .visible-xlg {
-        display: block!important;
-    }
-    .hidden-xlg {
-        display: none!important;
-    }
-    .visible-xlg {
-        display: block!important;
-    }
-    .hidden-xlg {
-        display: none!important;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .vcenter {
-        position: relative;
-        -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-        transform: translateY(50%);
-    }
-}
-
-@media (max-width: 991px) {
+@media (max-width: $screen-tablet) {
     .header .menu>li {
         display: block;
     }
@@ -1190,7 +1027,7 @@ a[href^="http://maps.google.com/maps"] {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $screen-large) {
     .row-same-height {
         overflow: hidden;
     }
@@ -1200,7 +1037,7 @@ a[href^="http://maps.google.com/maps"] {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: $screen-tablet) {
     .header.dark .menu-content .menu>li>a:not(.btn):hover,
     .header.light .menu-content .menu>li>a:not(.btn):hover,
     .header.light-solid .menu-content .menu>li>a:not(.btn):hover,
@@ -1467,270 +1304,13 @@ a[href^="http://maps.google.com/maps"] {
     .header .menu>li.mega>span.arrow {
         display: none;
     }
-    .sm-p-t-0 {
-        padding-top: 0px!important;
-    }
-    .sm-p-r-0 {
-        padding-right: 0px!important;
-    }
-    .sm-p-l-0 {
-        padding-left: 0px!important;
-    }
-    .sm-p-b-0 {
-        padding-bottom: 0px!important;
-    }
-    .sm-padding-0 {
-        padding: 0px!important;
-    }
-    .sm-p-t-5 {
-        padding-top: 5px!important;
-    }
-    .sm-p-r-5 {
-        padding-right: 5px!important;
-    }
-    .sm-p-l-5 {
-        padding-left: 5px!important;
-    }
-    .sm-p-b-5 {
-        padding-bottom: 5px!important;
-    }
-    .sm-padding-5 {
-        padding: 5px!important;
-    }
-    .sm-p-t-10 {
-        padding-top: 10px!important;
-    }
-    .sm-p-r-10 {
-        padding-right: 10px!important;
-    }
-    .sm-p-l-10 {
-        padding-left: 10px!important;
-    }
-    .sm-p-b-10 {
-        padding-bottom: 10px!important;
-    }
-    .sm-padding-10 {
-        padding: 10px!important;
-    }
-    .sm-p-t-15 {
-        padding-top: 15px!important;
-    }
-    .sm-p-r-15 {
-        padding-right: 15px!important;
-    }
-    .sm-p-l-15 {
-        padding-left: 15px!important;
-    }
-    .sm-p-b-15 {
-        padding-bottom: 15px!important;
-    }
-    .sm-padding-15 {
-        padding: 15px!important;
-    }
-    .sm-p-t-20 {
-        padding-top: 20px!important;
-    }
-    .sm-p-r-20 {
-        padding-right: 20px!important;
-    }
-    .sm-p-l-20 {
-        padding-left: 20px!important;
-    }
-    .sm-p-b-20 {
-        padding-bottom: 20px!important;
-    }
-    .sm-padding-20 {
-        padding: 20px!important;
-    }
-    .sm-p-t-25 {
-        padding-top: 25px!important;
-    }
-    .sm-p-r-25 {
-        padding-right: 25px!important;
-    }
-    .sm-p-l-25 {
-        padding-left: 25px!important;
-    }
-    .sm-p-b-25 {
-        padding-bottom: 25px!important;
-    }
-    .sm-padding-25 {
-        padding: 25px!important;
-    }
-    .sm-p-t-30 {
-        padding-top: 30px!important;
-    }
-    .sm-p-r-30 {
-        padding-right: 30px!important;
-    }
-    .sm-p-l-30 {
-        padding-left: 30px!important;
-    }
-    .sm-p-b-30 {
-        padding-bottom: 30px!important;
-    }
-    .sm-padding-30 {
-        padding: 30px!important;
-    }
-    .sm-m-t-5 {
-        margin-top: 5px!important;
-    }
-    .sm-m-r-5 {
-        margin-right: 5px!important;
-    }
-    .sm-m-l-5 {
-        margin-left: 5px!important;
-    }
-    .sm-m-b-5 {
-        margin-bottom: 5px!important;
-    }
-    .sm-m-t-10 {
-        margin-top: 10px!important;
-    }
-    .sm-m-r-10 {
-        margin-right: 10px!important;
-    }
-    .sm-m-l-10 {
-        margin-left: 10px!important;
-    }
-    .sm-m-b-10 {
-        margin-bottom: 10px!important;
-    }
-    .sm-m-t-15 {
-        margin-top: 15px!important;
-    }
-    .sm-m-r-15 {
-        margin-right: 15px!important;
-    }
-    .sm-m-l-15 {
-        margin-left: 15px!important;
-    }
-    .sm-m-b-15 {
-        margin-bottom: 15px!important;
-    }
-    .sm-m-t-20 {
-        margin-top: 20px!important;
-    }
-    .sm-m-r-20 {
-        margin-right: 20px!important;
-    }
-    .sm-m-l-20 {
-        margin-left: 20px!important;
-    }
-    .sm-m-b-20 {
-        margin-bottom: 20px!important;
-    }
-    .sm-m-t-25 {
-        margin-top: 25px!important;
-    }
-    .sm-m-r-25 {
-        margin-right: 25px!important;
-    }
-    .sm-m-l-25 {
-        margin-left: 25px!important;
-    }
-    .sm-m-b-25 {
-        margin-bottom: 25px!important;
-    }
-    .sm-m-t-30 {
-        margin-top: 30px!important;
-    }
-    .sm-m-r-30 {
-        margin-right: 30px!important;
-    }
-    .sm-m-l-30 {
-        margin-left: 30px!important;
-    }
-    .sm-m-b-30 {
-        margin-bottom: 30px!important;
-    }
-    .sm-no-margin {
-        margin: 0px!important;
-    }
-    .sm-no-padding {
-        padding: 0px!important;
-    }
-    .sm-text-right {
-        text-align: right!important;
-    }
-    .sm-text-left {
-        text-align: left!important;
-    }
-    .sm-text-center {
-        text-align: center!important;
-    }
-    .sm-pull-right {
-        float: right!important;
-    }
-    .sm-pull-left {
-        float: left!important;
-    }
-    .sm-pull-reset {
-        float: none!important;
-    }
-    .sm-block {
-        display: block!important;
-    }
-    .sm-inline {
-        display: inline-block;
-    }
-    .sm-image-responsive-height {
-        width: 100%;
-        height: auto;
-    }
-    .sm-image-responsive-width {
-        height: 100%;
-        width: auto;
-    }
-    .sm-full-height {
-        height: 100%;
-        width: auto;
-    }
-    .sm-full-width {
-        width: 100%;
-        height: auto!important;
-    }
-    .sm-reset-position {
-        position: initial;
-    }
-    .sm-screen-center {
-        position: absolute;
-        left: -50%;
-    }
-    .sm-static {
-        position: static!important;
-    }
+    
     .header.transparent-light .menu>li>a:not(.btn) {
         color: #121212;
         margin-bottom: 10px;
     }
     .header.dark .menu>li>a:not(.btn) {
         color: #121212;
-    }
-    .sm-no-border {
-        border-width: 0;
-    }
-    .sm-b-r,
-    .sm-b-l,
-    .sm-b-t,
-    .sm-b-b {
-        border-width: 0;
-        border-style: solid;
-    }
-    .sm-b-r {
-        border-right-width: 1px;
-    }
-    .sm-b-l {
-        border-left-width: 1px;
-    }
-    .sm-b-t {
-        border-top-width: 1px;
-    }
-    .sm-b-b {
-        border-bottom-width: 1px;
-    }
-    .error-container {
-        width: auto;
     }
 }
 
@@ -1883,31 +1463,4 @@ a[href^="http://maps.google.com/maps"] {
 .divider-sm {
     background-image: linear-gradient(-32deg, #b721ff 0, #21d4fd 100%);
     height: 1px;
-}
-
-.swiper-button-prev {
-    left: 0;
-}
-
-.swiper-button-next {
-    right: 0;
-}
-
-.swiper-container {
-    height: 250px;
-}
-
-.swiper-button-black {
-    opacity: .3;
-    transition: opacity .2s;
-}
-
-.swiper-button-black:hover,
-.swiper-button-black:focus {
-    opacity: 1;
-}
-
-.swiper-button-prev.swiper-button-disabled,
-.swiper-button-next.swiper-button-disabled {
-    opacity: 0
 }

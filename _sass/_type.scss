@@ -6,7 +6,7 @@ html {
 
 body {
     color: #626262;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: $font-family-default;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.01em;
@@ -24,7 +24,7 @@ h4,
 h5,
 h6 {
     margin: 10px 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-family-default;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -81,7 +81,7 @@ h6.block {
 }
 
 .block-title {
-    font-family: 'Montserrat';
+    font-family: $font-family-secondary;
     font-weight: 400;
     font-size: 15px;
     text-transform: uppercase;
@@ -196,12 +196,19 @@ blockquote:before {
 
 blockquote p {
     font-size: 16px;
+    font-weight: $fw-medium;
 }
 
 blockquote small {
     line-height: 29px;
     color: #8b91a0;
     padding-left: 30px;
+}
+
+.blockquote__author {
+    line-height: 29px;
+    color: #8b91a0;
+    text-align: right;
 }
 
 blockquote small:before {
@@ -461,20 +468,12 @@ hr.dotted {
 }
 
 .font-montserrat {
-    font-family: 'Montserrat'!important;
-}
-
-.font-georgia {
-    font-family: Georgia!important;
+    font-family: $font-family-secondary;
 }
 
 .font-open-sans {
-    font-family: 'Open Sans'!important;
+    font-family: $font-family-default;
     font-weight: 300;
-}
-
-.font-heading {
-    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .overflow-ellipsis {

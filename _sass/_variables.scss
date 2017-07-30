@@ -1,6 +1,21 @@
-$font-family-sans: 'Open Sans', Arial, sans-serif;
+// Font
+$fw-normal: 300;
+$fw-medium: 400;
+$fw-bold: 700;
+$font-family-default: 'Open Sans', Arial, sans-serif;
+$font-family-secondary: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Color
 $color-purple: #b721ff;
 $color-blue: #21d4fd;
 
 $color-primary: $color-blue;
 $color-secondary: $color-purple;
+
+
+// Screen
+$screen-mobile:  480px;
+$screen-tablet:  991px;
+$screen-desktop: 1024px;
+$screen-large:   1200px;
+
