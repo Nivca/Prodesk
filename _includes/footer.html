@@ -1,9 +1,9 @@
-<footer class="p-b-30 p-t-30 footer sm-text-center">
+<footer class="p-b-30 p-t-30 footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
                 <div class="row">
-                    <div class="col-xs-5 p-r-0">
+                    <div class="pull-left p-r-0">
                         <img src="{{ site.baseurl }}/images/logo.svg" class="logo-size--lg" alt="">
                     </div>
                     <div class="col-xs-7 no-padding">
@@ -12,14 +12,14 @@
                         </h6>
                     </div>
                 </div>
-                 <p class="fs-11 muted no-margin">© 2017 Phoenix Imports & Exports Inc</p> 
+                <p class="fs-11 muted no-margin">© 2017 Phoenix Imports & Exports Inc</p> 
             </div>
-            <div class="col-sm-5 col-sm-offset-1">
-                <ul class="no-style no-padding font-secondary m-t-30">
+            <div class="col-sm-2 col-sm-offset-1 m-t-30 sm-text-center">
+                <ul class="no-style no-padding font-secondary no-margin">
                     {% for link in site.data.navigation.footer %}
-                     {% assign class = nil %}
+                    {% assign class = nil %}
                     {% if page.url contains link.url %}
-                        {% assign class = 'active' %}
+                    {% assign class = 'active' %}
                     {% endif %}
                     <li>
                         <a href="{{ link.url }}" 
@@ -28,19 +28,24 @@
                     </a>
                 </li>
                 {% endfor %}
-            </div>
-            <div class="col-sm-3 text-right sm-text-center p-t-20">
-                <img src="{{ site.baseurl }}/images/mii.svg" class="logo-size--lg" alt="Make in india">
-                <div class="m-t-10 ">
-                    <ul class="no-style fs-11 no-padding font-arial">
-                        <li class="inline no-padding">
-                            <a href="http://www.makeinindia.com/home/" target="_blank" 
-                            class="hint-text text-master p-l-10 p-r-10 xs-no-padding xs-m-t-10">
-                            Make in India
-                        </a></li>
-                    </ul>
-                </div>
+            </ul>
+        </div>
+        
+        <div class="col-sm-3 m-t-30 sm-text-center">
+            {% include svg-icons.html %}
+        </div>
+        <div class="col-sm-3 text-right sm-text-center p-t-20">
+            <img src="{{ site.baseurl }}/images/mii.svg" class="logo-size--lg" alt="Make in india">
+            <div class="m-t-10">
+                <ul class="no-style fs-11 no-padding font-arial">
+                    <li class="inline no-padding">
+                        <a href="http://www.makeinindia.com/home/" target="_blank" 
+                        class="hint-text text-master p-l-10 p-r-10 xs-no-padding xs-m-t-10">
+                        Make in India
+                    </a></li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
 </footer>
